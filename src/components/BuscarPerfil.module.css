@@ -1,0 +1,135 @@
+/* Estilo geral */
+body {
+    background: #000; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #FFF;
+}
+
+/* Contêiner principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    text-align: center; /* Centraliza o texto */
+    width: 100%;
+    max-width: 800px; /* Limita a largura máxima */
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 58px;
+    height: 58px;
+}
+
+.title {
+    font-size: 62px;
+    font-weight: bold;
+}
+
+/* Input e botão */
+.inputContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 50px 10px 10px; /* Espaço para o botão dentro do input */
+    font-size: 26px;
+    border: 1px solid #EEE;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    background-color: #FFF;
+    color: #333;
+}
+
+.input:focus {
+    border-color: #007BFF;
+}
+
+.searchButton {
+    position: absolute;
+    right: 0px; /* Posiciona o botão no lado direito do input */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #FFF;
+    background-color: #007BFF;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 8px 12px; /* Ajusta o tamanho do botão */
+    border-radius: 5px; /* Bordas arredondadas para combinar com o input */
+    transition: background-color 0.3s;
+}
+
+.searchButton:hover {
+    background-color: #0056b3;
+}
+
+/* Mensagem de erro */
+.error {
+    color: #FF4D4D;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Container do perfil */
+.profileContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #FFF;
+    color: #333;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+}
+
+.avatar {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0056b3;
+}
+
+.profileContainerContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileContainer h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #005CFF;
+    text-align: left;
+}
+
+.profileContainer p {
+    font-size: 15px;
+    margin: 5px 0 0;
+    text-align: left;
+}
